@@ -1,0 +1,36 @@
+body.pr1{
+
+	background-color: #B5DDBE; 
+}
+
+body.pr2{
+
+	background-color: #D267A7; 
+}
+
+
+p.jlpt{
+
+	font-size: x-large;
+	color: green; 
+	font-family: sans-serif; 
+	font-style: oblique;
+	font-variant: small-caps;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+h1.firuz{
+   
+	color: #D267A7; 
+
+}
+
+h1.header1{
+    color: blue; 
+	background-color: white; 
+	border: 4px dashed #A63234; 
+	
+
+    <!-- 4px dotted red--> 
+}
