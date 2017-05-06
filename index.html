@@ -12,7 +12,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
   <link href="css/flexslider.css" rel="stylesheet">
-  <link href="css/templatemo-style.css" rel="stylesheet">
+  <link href="css/Style.css" rel="stylesheet">
   <link href="css/fixPicture.css" rel="stylesheet">
 
   </head>
@@ -22,7 +22,7 @@
   	<div class="tm-header">
   		<div class="container">
   			<div class="row">
-  				<div class="col-lg-4 col-md-4 col-sm-3 tm-site-name-container"><a href="index.html">
+  				<div class="col-lg-4 col-md-4 col-sm-2 tm-site-name-container"><a href="index.html">
   					<img src="imgs/logo.jpg" height="12%" width="12%" style="padding-bottom: 10px; margin-right: 3px" >
   					<span class="tm-site-name">Registan Plaza</span>	
   				</a>
@@ -37,6 +37,7 @@
 							<li> <a href="#rooms_4">Room</a></li>
 							<li><a href="about.html">About</a></li>							
 							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">Login</a></li>
 							
 					 </nav> 	
 	  			</div>					
@@ -76,9 +77,7 @@
 					    <li role="presentation" class="active">
 					    	<a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Hotel</a>
 					    </li>
-					   <!--  <li role="presentation">
-					    	<a href="#car" aria-controls="car" role="tab" data-toggle="tab">Car Rental</a>
-					    </li> -->
+					   
 					</ul>
 
 					<!-- Tab panes -->
@@ -87,15 +86,7 @@
 					    	<div class="tm-search-box effect2">
 								<form action="#" method="post" class="hotel-search-form">
 									<div class="tm-form-inner">
-										<!-- <div class="form-group">
-							            	 <select class="form-control">
-							            	 	<option value="">-- Select Hotel -- </option>
-							            	 	<option value="shangrila">Shangri-La</option>
-												<option value="chatrium">Chatrium</option>
-												<option value="fourseasons">Four Seasons</option>
-												<option value="hilton">Hilton</option>
-											</select> 
-							          	</div> -->
+										
 							          	<div class="form-group">
 							                <div class='input-group date' id='datetimepicker1'>
 							                    <input type='text' class="form-control" placeholder="Check-in Date" />
@@ -221,55 +212,16 @@
 	<footer class="tm-black-bg">
 		<div class="container">
 			<div class="row">
-				<p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name 
-                
-                | Designed by <a rel="nofollow" href="http://www.templatemo.com" target="_parent"></a></p>
+				<p class="tm-copyright-text"> 53, Shokhrukh Str., Samarkand city, Uzbekistan</p>
 			</div>
 		</div>		
 	</footer>
-	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      		<!-- jQuery -->
-  	<script type="text/javascript" src="js/moment.js"></script>							<!-- moment.js -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>					<!-- bootstrap js -->
-	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      	
+  	<script type="text/javascript" src="js/moment.js"></script>							
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>					
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>	
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<!--
-	<script src="js/froogaloop.js"></script>
-	<script src="js/jquery.fitvid.js"></script>
--->
-   	<script type="text/javascript" src="js/templatemo-script.js"></script>      		<!-- Templatemo Script -->
-	<script>
-		// HTML document is loaded. DOM is ready.
-		$(function() {			
-
-        	$('.date').datetimepicker({
-            	format: 'MM/DD/YYYY'
-            });
-            $('.date-time').datetimepicker();
-
-			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
-		  	$('a[href*=#]:not([href=#])').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000);
-			        return false;
-			      }
-			    }
-		  	});
-		});
-		
-		// Load Flexslider when everything is loaded.
-		$(window).load(function() {	  		
-			
-		    $('.flexslider').flexslider({
-			    controlNav: false
-		    });
-
-
-	  	});
-	</script>
+   	<script type="text/javascript" src="js/main-script.js"></script>      		
+	
  </body>
  </html>
