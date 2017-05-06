@@ -142,41 +142,27 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>					<!-- bootstrap js -->
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>			<!-- flexslider js -->
 	<script type="text/javascript" src="js/main-script.js"></script>      		<!-- Templatemo Script -->
-	<script>
-		/* Google map
-      	------------------------------------------------*/
-      	var map = '';
-      	var center;
+		<!--/* Google map&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;*/-->
 
-      	function initialize() {
-	        var mapOptions = {
-	          	zoom: 14,
-	          	center: new google.maps.LatLng(37.769725, -122.462154),
-	          	scrollwheel: false
-        	};
-        
-	        map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+        <script>
+        function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+	</script>
 
-	        google.maps.event.addDomListener(map, 'idle', function() {
-	          calculateCenter();
-	        });
-        
-	        google.maps.event.addDomListener(window, 'resize', function() {
-	          map.setCenter(center);
-	        });
-      	}
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
-	    function calculateCenter() {
-	        center = map.getCenter();
-	    }
 
-	    function loadGoogleMap(){
-	        var script = document.createElement('script');
-	        script.type = 'text/javascript';
-	        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-	        document.body.appendChild(script);
-	    }
-	
+
+
+
+
+
+
       	// DOM is ready
 		$(function() {
 
