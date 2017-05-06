@@ -15,6 +15,12 @@
   <link href="css/Style.css" rel="stylesheet">
   <link href="css/fixPicture.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
   </head>
   <body class="tm-gray-bg">
   	<!-- Header -->
@@ -202,8 +208,21 @@
            </div>
             <div class="modal-body">
             <img src="imgs/luxe.jpg" class = "img-rounded" height="50%" width="50%">
-            <div class="row"> 
-            </div>
+           <div>
+
+			   <div class="row" style="margin: 3px">
+						<br>
+					<a data-toggle="tooltip" title="Wi-Fi" >		<img src="icons\wifi_ic.png" class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Air conditioner"><img src="icons\ac_ic.png" class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Bar" >			<img src="icons\bar_ic.png"  class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Bath" >			<img src="icons\bath_ic.png" class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Phone" >		<img src="icons\phone_ic.png" class="service"  height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Safe" >			<img src="icons\safe_ic.png"  class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="Shower" >		<img src="icons\shower_ic.png" class="service" height="5%" width="5%"></a>
+					<a data-toggle="tooltip" title="TV" class="service"><img src="icons\tv_ic.png" class="service" height="5%" width="5%"></a
+
+			   </div>
+		   </div>
 
             </div>
             <div class="modal-footer">            
@@ -213,6 +232,16 @@
 
      </div>
     </div>
+
+
+	<script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+	</script>
+
+
+
 
 <!-- Modal for SemiLuxeRoom -->
     <div id="SemiLuxeRoom" class="modal fade" role="dialog">
